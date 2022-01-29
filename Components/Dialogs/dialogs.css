@@ -7,6 +7,7 @@
     width: 100%;
     background-color: var(--dialog-bg-color);
     border: var(--dialog-border);
+    border-radius: var(--dialog-border-radius);
 
     /* flex - properties */
     display: flex;
@@ -63,6 +64,10 @@
     align-items: center;
 }
 
+.alert-dialog .dialog-buttons-container {
+    padding-top: 0;
+}
+
 .simple-dialog .dialog-buttons-container {
     padding-top: 0.1rem;
     overflow-y: auto;
@@ -108,6 +113,14 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.dialog-buttons-container .dialog-button {
+    text-transform: uppercase;
+}
+
+.simple-dialog .dialog-buttons-container .dialog-button {
+    text-transform: none;
 }
 
 .dialog-svg-icons {

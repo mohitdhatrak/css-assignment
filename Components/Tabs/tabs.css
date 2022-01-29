@@ -4,7 +4,6 @@
 }
 
 .tab {
-    padding: 1em;
     background-color: var(--tab-bg-color);
     border: var(--tab-border);
     width: 100%;

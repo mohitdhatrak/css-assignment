@@ -6,11 +6,13 @@
 .header-text-container {
     overflow-y: auto;
     height: 100%;
+    border: var(--header-container-border);
 }
 
 .header {
     background-color: var(--header-bg-color);
     border: var(--header-border);
+    border-radius: var(--header-border-radius);
     padding: 1em;
     position: relative;
 

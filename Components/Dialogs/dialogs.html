@@ -17,20 +17,24 @@
         <!-- height can be decided by user for type 2 and 3 dialogs if he wants scroll bar in options, no height to be given for type 1 -->
 
         <div class="dialogs-container">
-            <div class="website-fixed-dialog-container">
+            <div class="website-dialog-container">
                 <div class="dialog alert-dialog">
                     <h2 class="dialog-title">Dialog header</h2>
-                    <p class="dialog-body">Dialog body text</p>
-                    <div
-                        class="dialog-buttons-container dialog-buttons-stacked"
-                    >
-                        <button class="dialog-button">Action 1</button>
-                        <button class="dialog-button">Action 2</button>
+                    <p class="dialog-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Assumenda reprehenderit ullam inventore doloremque
+                        cumque est totam! Nemo est iste, omnis corrupti
+                        reprehenderit laboriosam culpa error assumenda sequi qui
+                        molestias aspernatur.
+                    </p>
+                    <div class="dialog-buttons-container">
+                        <button class="dialog-button">Proceed</button>
+                        <button class="dialog-button">Cancel</button>
                     </div>
                 </div>
             </div>
 
-            <div class="website-fixed-dialog-container">
+            <div class="website-dialog-container">
                 <div class="dialog simple-dialog">
                     <h2 class="dialog-title">Dialog header</h2>
                     <div class="dialog-buttons-container">
@@ -53,7 +57,7 @@
                 </div>
             </div>
 
-            <div class="website-scroll-dialog-container">
+            <div class="website-dialog-container">
                 <div class="dialog confirmation-dialog">
                     <h2 class="dialog-title">Dialog header</h2>
                     <form onsubmit="return false" class="dialog-form">
@@ -92,12 +96,14 @@
                             >
                         </div>
 
-                        <div class="dialog-buttons-container">
+                        <div
+                            class="dialog-buttons-container dialog-buttons-stacked"
+                        >
                             <button class="dialog-button" type="submit">
-                                Action 1
+                                Proceed
                             </button>
                             <button class="dialog-button" type="submit">
-                                Action 2
+                                Cancel
                             </button>
                         </div>
                     </form>

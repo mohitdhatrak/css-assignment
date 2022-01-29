@@ -22,16 +22,16 @@ body {
     --card-button-focus-outline-color: #2563eb;
 
     /* chip CSS variables*/
-    --chip-container-bg-color: #1e3a8a;
+    --chip-container-bg-color: #93c5fd;
     --chip-container-border: 1px solid black;
     --chip-container-border-radius: 1em;
-    --chip-bg-color: #60a5fa;
+    --chip-bg-color: #1d4ed8;
     --chip-border: 1px solid black;
     --chip-border-radius: 1.2em;
     --chip-icon-size: 1.3rem;
-    --chip-icon-color: black;
+    --chip-icon-color: white;
     --chip-input-border-radius: 1em;
-    --chip-button-focus-outline-color: #a5f3fc;
+    --chip-button-focus-outline-color: white;
 
     /* drawer CSS variables */
     --drawer-height: 36rem;
@@ -40,15 +40,17 @@ body {
     --drawer-button-hover-color: #e2e8f0;
     --drawer-more-button-hover-color: lightgrey;
     --drawer-divider-line: #e2e8f0;
-    --drawer-icon-color: gray;
+    --drawer-icon-color: #737373;
     --drawer-icon-size: 1.3rem;
     --nested-drawer-icon-size: 1rem;
     --drawer-button-focus-outline-color: black;
 
     /* header CSS variables */
-    --header-bg-color: #6200ee;
+    --header-container-border: 1px solid black;
+    --header-bg-color: #1d4ed8;
     --header-border: none;
-    --header-button-hover-color: #8b5cf6;
+    --header-border-radius: 0 0 0.5em 0.5em;
+    --header-button-hover-color: #3b82f6;
     --header-icon-color: white;
     --header-icon-size: 1.6rem;
     --short-header-icon-size: 1.3rem;
@@ -63,8 +65,8 @@ body {
     --button-badge-border: 1px solid black;
     --badge2-bg-color: #a5f3fc;
     --badge2-border: 1px solid black;
-    --icon-badge-color: #22c55e;
-    --badge3-bg-color: #fc6801;
+    --icon-badge-color: #059669;
+    --badge3-bg-color: #dc2626;
     --badge3-border: 1px solid white;
     --badge-focus-outline-color: black;
 
@@ -75,16 +77,17 @@ body {
     --snackbar-button-focus-outline-color: white;
 
     /* dialogs CSS variables */
-    --dialog-bg-color: antiquewhite;
+    --dialog-bg-color: #bfdbfe;
     --dialog-border: 1px solid black;
+    --dialog-border-radius: 0.5em;
     --confirmation-dialog-divider-border: 1px solid black;
-    --dialog-button-color: purple;
-    --dialog-button-hover-color: lightblue;
-    --simple-dialog-icon-color: grey;
+    --dialog-button-color: #1d4ed8;
+    --dialog-button-hover-color: #93c5fd;
+    --simple-dialog-icon-color: #525252;
     --simple-dialog-icon-size: 3rem;
     --simple-dialog-height: 10rem;
     --confirmation-dialog-height: 10rem;
-    --dialog-button-focus-outline-color: purple;
+    --dialog-button-focus-outline-color: #1d4ed8;
 
     /* tabs CSS variables */
     --tab-width: 45rem;
@@ -153,10 +156,6 @@ body {
     max-width: 80vw;
 }
 
-.website-header-container .header-text-container {
-    border: 1px solid black;
-}
-
 .badges-container {
     display: grid;
     /* grid-template-rows: repeat(auto-fit, minmax(10rem, 3fr)); */
@@ -175,15 +174,10 @@ body {
     gap: 2em;
 }
 
-.website-fixed-dialog-container {
+.website-dialog-container {
     width: 20rem;
     max-width: 90vw;
-}
-
-.website-scroll-dialog-container {
-    width: 20rem;
     /* height: 28rem; not working --> given css variables */
-    max-width: 90vw;
 }
 
 .tabs-container {
