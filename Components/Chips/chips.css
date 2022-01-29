@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.chip {
+    background-color: var(--chip-container-bg-color);
+    border: var(--chip-container-border);
+    border-radius: var(--chip-container-border-radius);
+    padding: 1em;
+    font-size: 1.3rem;
+
+    /* flex - properties */
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.chip-item {
+    background-color: var(--chip-bg-color);
+    list-style: none;
+    border: var(--chip-border);
+    border-radius: var(--chip-border-radius);
+    padding: 0.2em 0.5em;
+
+    /* flex - properties */
+    display: flex;
+    gap: 7px;
+}
+
+.chip-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+}
+
+.chip-button:focus {
+    outline: var(--chip-button-focus-outline-color) solid 2px;
+}
+
+.chip-svg-icon {
+    font-size: var(--chip-icon-size) !important;
+    color: var(--chip-icon-color);
+}
+
+.chip-input {
+    width: 100%;
+    font-size: 1rem;
+    border-radius: var(--chip-input-border-radius);
+    padding: 1em;
+}

@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.tab {
+    padding: 1em;
+    background-color: var(--tab-bg-color);
+    border: var(--tab-border);
+    width: 100%;
+    overflow-x: auto;
+
+    /* flex - properties */
+    display: flex;
+}
+
+.tab.tab-scroll {
+    width: var(--tab-width);
+    max-width: 100%;
+}
+
+.tab-button {
+    cursor: pointer;
+    padding: 1em;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    color: var(--tab-button-color);
+    text-transform: uppercase;
+
+    /* flex - properties */
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.tab-top-icon .tab-button {
+    flex-direction: column;
+    padding-top: 0.6em;
+}
+
+.tab-button:focus {
+    background-color: var(--tab-button-focus-bg-color);
+    color: var(--tab-button-focus-color);
+    border-bottom: var(--tab-button-focus-border-bottom);
+    outline: var(--tab-button-focus-outline-color) solid 2px;
+}
+
+.tab-button:hover {
+    background-color: var(--tab-button-hover-color);
+}
+
+.tab-button:focus.tab-button:hover {
+    background-color: var(--tab-button-focus-bg-color);
+}
+
+.tab-svg-icons {
+    display: none !important;
+    color: var(--tab-icon-color);
+    font-size: var(--tab-icon-size) !important;
+}
+
+.tab-leading-icon .tab-svg-icons,
+.tab-top-icon .tab-svg-icons {
+    display: inline !important;
+}
+
+.tab-button:focus .tab-svg-icons {
+    color: var(--tab-button-focus-color);
+}

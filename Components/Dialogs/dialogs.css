@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.dialog {
+    width: 100%;
+    background-color: var(--dialog-bg-color);
+    border: var(--dialog-border);
+
+    /* flex - properties */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.dialog.confirmation-dialog {
+    gap: 0;
+    width: 100%;
+}
+
+.dialog-title {
+    margin: 0;
+    width: 100%;
+    padding: 0.8em 1em;
+    padding-bottom: 0;
+}
+
+.confirmation-dialog .dialog-title {
+    padding: 0.8em 1em;
+}
+
+.dialog-body {
+    margin: 0;
+    width: 100%;
+    padding: 0 1.5em;
+    overflow-y: auto;
+}
+
+.confirmation-dialog .dialog-body {
+    height: var(--confirmation-dialog-height);
+    border-top: var(--confirmation-dialog-divider-border);
+    border-bottom: var(--confirmation-dialog-divider-border);
+    padding: 1rem;
+
+    /* flex - properties */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.dialog-buttons-container {
+    width: 100%;
+    padding: 0.8em 1em;
+
+    /* flex - properties */
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.simple-dialog .dialog-buttons-container {
+    padding-top: 0.1rem;
+    overflow-y: auto;
+    height: var(--simple-dialog-height);
+}
+
+.dialog-buttons-container.dialog-buttons-stacked {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.dialog-button {
+    font-size: 1.2rem;
+    color: var(--dialog-button-color);
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    text-align: start;
+}
+
+.dialog-button:focus {
+    outline: var(--dialog-button-focus-outline-color) solid 2px;
+}
+
+.dialog-button:hover {
+    background-color: var(--dialog-button-hover-color);
+}
+
+.simple-dialog .dialog-button {
+    width: 100%;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.confirmation-dialog .dialog-body .dialog-button {
+    width: 100%;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dialog-svg-icons {
+    font-size: var(--simple-dialog-icon-size) !important;
+    color: var(--simple-dialog-icon-color);
+}
+
+.dialog-form {
+    width: 100%;
+}
+
+.dialog-input {
+    cursor: pointer;
+    margin: 0;
+    transform: scale(1.5);
+}
+
+.dialog-input:focus {
+    outline: var(--dialog-button-focus-outline-color) solid 2px;
+}

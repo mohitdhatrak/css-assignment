@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.snackbar {
+    width: 30rem;
+    max-width: 90vw;
+    padding: 0.8em 1.2em;
+    background-color: var(--snackbar-bg-color);
+    border-radius: 0.3em;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+
+    /* flex - properties */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4em;
+}
+
+.snackbar.snackbar-top-left {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.snackbar.snackbar-top-right {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.snackbar.snackbar-bottom-left {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.snackbar-text {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+}
+
+.snackbar-buttons-container {
+    /* flex - properties */
+    display: flex;
+    gap: 1em;
+}
+
+.snackbar-button {
+    width: max-content;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0.2rem;
+    color: var(--snackbar-button-color);
+    text-transform: uppercase;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+}
+
+.snackbar-button:focus {
+    outline: var(--snackbar-button-focus-outline-color) solid 2px;
+}
+
+.snackbar-svg-icons {
+    color: var(--snackbar-icon-color);
+}

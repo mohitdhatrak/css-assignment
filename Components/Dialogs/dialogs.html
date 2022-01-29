@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spark UI</title>
+        <link rel="stylesheet" href="/main.css" />
+        <link rel="stylesheet" href="/Components/Dialogs/dialogs.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+    </head>
+    <body>
+        <!-- all 3 html files different, use dialog-buttons-stacked class in buttons container to get stacked behaviour of buttons in 1 and 3 types-->
+        <!-- height can be decided by user for type 2 and 3 dialogs if he wants scroll bar in options, no height to be given for type 1 -->
+
+        <div class="dialogs-container">
+            <div class="website-fixed-dialog-container">
+                <div class="dialog alert-dialog">
+                    <h2 class="dialog-title">Dialog header</h2>
+                    <p class="dialog-body">Dialog body text</p>
+                    <div
+                        class="dialog-buttons-container dialog-buttons-stacked"
+                    >
+                        <button class="dialog-button">Action 1</button>
+                        <button class="dialog-button">Action 2</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="website-fixed-dialog-container">
+                <div class="dialog simple-dialog">
+                    <h2 class="dialog-title">Dialog header</h2>
+                    <div class="dialog-buttons-container">
+                        <button class="dialog-button">
+                            <i class="material-icons dialog-svg-icons"
+                                >account_circle</i
+                            >Option 1
+                        </button>
+                        <button class="dialog-button">
+                            <i class="material-icons dialog-svg-icons"
+                                >account_circle</i
+                            >Option 2
+                        </button>
+                        <button class="dialog-button">
+                            <i class="material-icons dialog-svg-icons"
+                                >account_circle</i
+                            >Option 3
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="website-scroll-dialog-container">
+                <div class="dialog confirmation-dialog">
+                    <h2 class="dialog-title">Dialog header</h2>
+                    <form onsubmit="return false" class="dialog-form">
+                        <div class="dialog-body">
+                            <label class="dialog-button"
+                                ><input
+                                    type="radio"
+                                    name="options"
+                                    required
+                                    class="dialog-input"
+                                />Option 1</label
+                            >
+                            <label class="dialog-button"
+                                ><input
+                                    type="radio"
+                                    name="options"
+                                    required
+                                    class="dialog-input"
+                                />Option 2</label
+                            >
+                            <label class="dialog-button"
+                                ><input
+                                    type="radio"
+                                    name="options"
+                                    required
+                                    class="dialog-input"
+                                />Option 3</label
+                            >
+                            <label class="dialog-button"
+                                ><input
+                                    type="radio"
+                                    name="options"
+                                    required
+                                    class="dialog-input"
+                                />Option 4</label
+                            >
+                        </div>
+
+                        <div class="dialog-buttons-container">
+                            <button class="dialog-button" type="submit">
+                                Action 1
+                            </button>
+                            <button class="dialog-button" type="submit">
+                                Action 2
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

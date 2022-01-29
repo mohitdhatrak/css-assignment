@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* Use margin 0 once all done for now for better visibility use margin 1*/
+    /* margin: 0; */
+    margin: 2em;
+}
+
+:root {
+    /* card CSS variables */
+    --card-bg-color: transparent; /* bg stands for background */
+    --card-border: 1px solid black;
+    --card-border-radius: 1.5em;
+    --card-image-text-overlay-color: white;
+    --card-primary-button-color: #2563eb;
+    --card-button-hover-color: lightblue;
+    --card-button-hover-border-radius: 0.6em;
+    --card-secondary-button-color: black; /* i.e. card-icon-color */
+    --card-icon-size: 1.4rem;
+    --card-button-focus-outline-color: #2563eb;
+
+    /* chip CSS variables*/
+    --chip-container-bg-color: #1e3a8a;
+    --chip-container-border: 1px solid black;
+    --chip-container-border-radius: 1em;
+    --chip-bg-color: #60a5fa;
+    --chip-border: 1px solid black;
+    --chip-border-radius: 1.2em;
+    --chip-icon-size: 1.3rem;
+    --chip-icon-color: black;
+    --chip-input-border-radius: 1em;
+    --chip-button-focus-outline-color: #a5f3fc;
+
+    /* drawer CSS variables */
+    --drawer-height: 36rem;
+    --drawer-border: 1px solid gray;
+    --drawer-bg-color: transparent;
+    --drawer-button-hover-color: #e2e8f0;
+    --drawer-more-button-hover-color: lightgrey;
+    --drawer-divider-line: #e2e8f0;
+    --drawer-icon-color: gray;
+    --drawer-icon-size: 1.3rem;
+    --nested-drawer-icon-size: 1rem;
+    --drawer-button-focus-outline-color: black;
+
+    /* header CSS variables */
+    --header-bg-color: #6200ee;
+    --header-border: none;
+    --header-button-hover-color: #8b5cf6;
+    --header-icon-color: white;
+    --header-icon-size: 1.6rem;
+    --short-header-icon-size: 1.3rem;
+    --header-button-focus-outline-color: white;
+
+    /* badge CSS variables */
+    --text-badge-bg-color: transparent;
+    --text-badge-border: 1px dashed black;
+    --badge1-bg-color: #fde047;
+    --badge1-border: 1px solid black;
+    --button-badge-bg-color: #fecaca;
+    --button-badge-border: 1px solid black;
+    --badge2-bg-color: #a5f3fc;
+    --badge2-border: 1px solid black;
+    --icon-badge-color: #22c55e;
+    --badge3-bg-color: #fc6801;
+    --badge3-border: 1px solid white;
+    --badge-focus-outline-color: black;
+
+    /* snackbar CSS variables */
+    --snackbar-bg-color: #333333;
+    --snackbar-icon-color: white;
+    --snackbar-button-color: #93c5fd;
+    --snackbar-button-focus-outline-color: white;
+
+    /* dialogs CSS variables */
+    --dialog-bg-color: antiquewhite;
+    --dialog-border: 1px solid black;
+    --confirmation-dialog-divider-border: 1px solid black;
+    --dialog-button-color: purple;
+    --dialog-button-hover-color: lightblue;
+    --simple-dialog-icon-color: grey;
+    --simple-dialog-icon-size: 3rem;
+    --simple-dialog-height: 10rem;
+    --confirmation-dialog-height: 10rem;
+    --dialog-button-focus-outline-color: purple;
+
+    /* tabs CSS variables */
+    --tab-width: 45rem;
+    --tab-bg-color: transparent;
+    --tab-border: 1px solid black;
+    --tab-button-color: #707070;
+    --tab-button-focus-bg-color: #dbeafe;
+    --tab-button-focus-color: #1d4ed8;
+    --tab-button-focus-border-bottom: 2px solid #1d4ed8;
+    --tab-button-hover-color: gainsboro;
+    --tab-icon-color: #707070;
+    --tab-icon-size: 1.5rem;
+    --tab-button-focus-outline-color: transparent;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    justify-items: center;
+    gap: 3em;
+}
+
+.website-card-vertical-container {
+    width: 23em;
+    max-width: 90vw;
+}
+
+.website-card-horizontal-container {
+    width: 23em;
+    max-width: 90vw;
+}
+
+.website-chip-container {
+    width: 50em;
+    max-width: 90vw;
+}
+
+.drawers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    justify-items: center;
+    gap: 1em;
+}
+
+.website-fixed-drawer-container {
+    width: 18rem;
+    max-width: 90vw;
+}
+
+.website-scroll-drawer-container {
+    width: 18rem;
+    /* height: 35rem; not using --> height control to user-- css variable */
+    max-width: 90vw;
+}
+
+.headers-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(5rem, 1fr));
+    justify-items: center;
+    gap: 2em;
+}
+
+.website-header-container {
+    width: 40rem;
+    height: 15rem;
+    max-width: 80vw;
+}
+
+.website-header-container .header-text-container {
+    border: 1px solid black;
+}
+
+.badges-container {
+    display: grid;
+    /* grid-template-rows: repeat(auto-fit, minmax(10rem, 3fr)); */
+    justify-items: center;
+    gap: 2em;
+}
+
+.website-badge-container {
+    width: max-content;
+}
+
+.dialogs-container {
+    display: grid;
+    /* grid-template-rows: repeat(auto-fit, minmax(10rem, 3fr)); */
+    justify-items: center;
+    gap: 2em;
+}
+
+.website-fixed-dialog-container {
+    width: 20rem;
+    max-width: 90vw;
+}
+
+.website-scroll-dialog-container {
+    width: 20rem;
+    /* height: 28rem; not working --> given css variables */
+    max-width: 90vw;
+}
+
+.tabs-container {
+    display: grid;
+    /* grid-template-rows: repeat(auto-fit, minmax(10rem, 3fr)); */
+    justify-items: center;
+    gap: 1em;
+}
+
+.website-fixed-tab-container {
+    max-width: 90vw;
+}
+
+.website-scroll-tab-container {
+    /* width: 25rem; not working --> given css variables */
+    max-width: 90vw;
+}

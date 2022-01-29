@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.drawer {
+    border: var(--drawer-border);
+    padding-bottom: 0.5em;
+    width: 100%;
+    height: max-content;
+    overflow-y: auto;
+    background-color: var(--drawer-bg-color);
+}
+
+.drawer.drawer-scroll {
+    height: var(--drawer-height);
+}
+
+.drawer-header {
+    padding: 1em;
+    padding-bottom: 0.6em;
+}
+
+.drawer-heading {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.drawer-subheading {
+    margin: 0;
+}
+
+.drawer-divider {
+    border: 1px var(--drawer-divider-line) solid;
+}
+
+.drawer-buttons-container {
+    /* flex - properties */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.drawer-more-button-container {
+    margin: 0 auto;
+    width: 95%;
+
+    /* flex - properties */
+    display: flex;
+    justify-content: space-between;
+}
+
+.drawer-more-button-container:hover {
+    background-color: var(--drawer-button-hover-color);
+}
+
+.drawer-button {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 95%;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.drawer-button:focus {
+    outline: var(--drawer-button-focus-outline-color) solid 2px;
+}
+
+.drawer-button:hover {
+    background-color: var(--drawer-button-hover-color);
+}
+
+.nested-drawer .drawer-button {
+    font-size: 0.9rem;
+}
+
+.drawer-more-button {
+    padding: 0.1em;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.drawer-more-button:focus {
+    outline: var(--drawer-button-focus-outline-color) solid 2px;
+}
+
+.drawer-more-button:hover {
+    background-color: var(--drawer-more-button-hover-color);
+}
+
+.drawer-svg-icons {
+    color: var(--drawer-icon-color);
+    font-size: var(--drawer-icon-size) !important;
+}
+
+.nested-drawer .drawer-svg-icons {
+    font-size: var(--nested-drawer-icon-size) !important;
+}
+
+.nested-drawer-button {
+    padding: 0.5em 1.2em;
+    padding-left: 0;
+    margin: 0 auto;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 95%;
+    position: relative;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.nested-drawer-button:focus {
+    outline: var(--drawer-button-focus-outline-color) solid 1px;
+}
+
+.nested-drawer-button:hover {
+    background-color: var(--drawer-button-hover-color);
+}
+
+.nested-drawer {
+    padding-top: 0.4em;
+    padding-left: 2em;
+}
