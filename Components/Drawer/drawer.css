@@ -124,7 +124,7 @@
 }
 
 .nested-drawer-button:focus {
-    outline: var(--drawer-button-focus-outline-color) solid 1px;
+    outline: var(--drawer-button-focus-outline-color) solid 2px;
 }
 
 .nested-drawer-button:hover {

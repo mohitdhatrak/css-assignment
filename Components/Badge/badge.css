@@ -100,6 +100,7 @@
     background-color: var(--badge2-bg-color);
     border: var(--badge2-border);
     border-radius: 50%;
+    color: white;
     position: absolute;
     right: -6%;
     top: -20%;

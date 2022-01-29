@@ -21,7 +21,7 @@ body {
     --card-icon-size: 1.4rem;
     --card-button-focus-outline-color: #2563eb;
 
-    /* chip CSS variables*/
+    /* chip CSS variables */
     --chip-container-bg-color: #93c5fd;
     --chip-container-border: 1px solid black;
     --chip-container-border-radius: 1em;
@@ -30,6 +30,7 @@ body {
     --chip-border-radius: 1.2em;
     --chip-icon-size: 1.3rem;
     --chip-icon-color: white;
+    --chip-input-border: none;
     --chip-input-border-radius: 1em;
     --chip-button-focus-outline-color: white;
 
@@ -49,7 +50,7 @@ body {
     --header-container-border: 1px solid black;
     --header-bg-color: #1d4ed8;
     --header-border: none;
-    --header-border-radius: 0 0 0.5em 0.5em;
+    --header-border-radius: 0;
     --header-button-hover-color: #3b82f6;
     --header-icon-color: white;
     --header-icon-size: 1.6rem;
@@ -59,11 +60,11 @@ body {
     /* badge CSS variables */
     --text-badge-bg-color: transparent;
     --text-badge-border: 1px dashed black;
-    --badge1-bg-color: #fde047;
+    --badge1-bg-color: #a5f3fc;
     --badge1-border: 1px solid black;
-    --button-badge-bg-color: #fecaca;
+    --button-badge-bg-color: #7dd3fc;
     --button-badge-border: 1px solid black;
-    --badge2-bg-color: #a5f3fc;
+    --badge2-bg-color: #2563eb;
     --badge2-border: 1px solid black;
     --icon-badge-color: #059669;
     --badge3-bg-color: #dc2626;

@@ -52,6 +52,7 @@
 .chip-input {
     width: 100%;
     font-size: 1rem;
+    border: var(--chip-input-border);
     border-radius: var(--chip-input-border-radius);
     padding: 1em;
 }
