@@ -3,6 +3,20 @@
     font-family: sans-serif;
 }
 
+:root {
+    --dialog-bg-color: #bfdbfe;
+    --dialog-border: 1px solid black;
+    --dialog-border-radius: 0.5em;
+    --confirmation-dialog-divider-border: 1px solid black;
+    --dialog-button-color: #1d4ed8;
+    --dialog-button-hover-color: #93c5fd;
+    --simple-dialog-icon-color: #525252;
+    --simple-dialog-icon-size: 3rem;
+    --simple-dialog-height: 10rem;
+    --confirmation-dialog-height: 10rem;
+    --dialog-button-focus-outline-color: #1d4ed8;
+}
+
 .dialog {
     width: 100%;
     background-color: var(--dialog-bg-color);

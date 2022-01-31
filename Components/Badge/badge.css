@@ -3,6 +3,21 @@
     font-family: sans-serif;
 }
 
+:root {
+    --text-badge-bg-color: transparent;
+    --text-badge-border: 1px dashed black;
+    --badge1-bg-color: #a5f3fc;
+    --badge1-border: 1px solid black;
+    --button-badge-bg-color: #7dd3fc;
+    --button-badge-border: 1px solid black;
+    --badge2-bg-color: #2563eb;
+    --badge2-border: 1px solid black;
+    --icon-badge-color: #059669;
+    --badge3-bg-color: #dc2626;
+    --badge3-border: 1px solid white;
+    --badge-focus-outline-color: black;
+}
+
 /* text with badge */
 
 .text-with-badge {

@@ -3,6 +3,20 @@
     font-family: sans-serif;
 }
 
+:root {
+    --chip-container-bg-color: #93c5fd;
+    --chip-container-border: 1px solid black;
+    --chip-container-border-radius: 1em;
+    --chip-bg-color: #1d4ed8;
+    --chip-border: 1px solid black;
+    --chip-border-radius: 1.2em;
+    --chip-icon-size: 1.3rem;
+    --chip-icon-color: white;
+    --chip-input-border: none;
+    --chip-input-border-radius: 1em;
+    --chip-button-focus-outline-color: white;
+}
+
 .chip {
     background-color: var(--chip-container-bg-color);
     border: var(--chip-container-border);

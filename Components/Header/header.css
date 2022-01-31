@@ -3,6 +3,18 @@
     font-family: sans-serif;
 }
 
+:root {
+    --header-container-border: 1px solid black;
+    --header-bg-color: #1d4ed8;
+    --header-border: none;
+    --header-border-radius: 0;
+    --header-button-hover-color: #3b82f6;
+    --header-icon-color: white;
+    --header-icon-size: 1.6rem;
+    --short-header-icon-size: 1.3rem;
+    --header-button-focus-outline-color: white;
+}
+
 .header-text-container {
     overflow-y: auto;
     height: 100%;

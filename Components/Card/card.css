@@ -3,6 +3,19 @@
     font-family: sans-serif;
 }
 
+:root {
+    --card-bg-color: transparent; /* bg stands for background */
+    --card-border: 1px solid black;
+    --card-border-radius: 1.5em;
+    --card-image-text-overlay-color: white;
+    --card-primary-button-color: #2563eb;
+    --card-button-hover-color: lightblue;
+    --card-button-hover-border-radius: 0.6em;
+    --card-secondary-button-color: black; /* i.e. card-icon-color */
+    --card-icon-size: 1.4rem;
+    --card-button-focus-outline-color: #2563eb;
+}
+
 .card {
     width: 100%;
     background-color: var(--card-bg-color);

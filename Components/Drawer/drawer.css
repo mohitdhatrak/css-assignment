@@ -3,6 +3,19 @@
     font-family: sans-serif;
 }
 
+:root {
+    --drawer-height: 36rem;
+    --drawer-border: 1px solid gray;
+    --drawer-bg-color: transparent;
+    --drawer-button-hover-color: #e2e8f0;
+    --drawer-more-button-hover-color: lightgrey;
+    --drawer-divider-line: #e2e8f0;
+    --drawer-icon-color: #737373;
+    --drawer-icon-size: 1.3rem;
+    --nested-drawer-icon-size: 1rem;
+    --drawer-button-focus-outline-color: black;
+}
+
 .drawer {
     border: var(--drawer-border);
     padding-bottom: 0.5em;

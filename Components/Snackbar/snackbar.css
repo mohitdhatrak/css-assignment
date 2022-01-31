@@ -3,6 +3,13 @@
     font-family: sans-serif;
 }
 
+:root {
+    --snackbar-bg-color: #333333;
+    --snackbar-icon-color: white;
+    --snackbar-button-color: #93c5fd;
+    --snackbar-button-focus-outline-color: white;
+}
+
 .snackbar {
     width: 30rem;
     max-width: 90vw;

@@ -3,6 +3,20 @@
     font-family: sans-serif;
 }
 
+:root {
+    --tab-width: 45rem;
+    --tab-bg-color: transparent;
+    --tab-border: 1px solid black;
+    --tab-button-color: #707070;
+    --tab-button-focus-bg-color: #dbeafe;
+    --tab-button-focus-color: #1d4ed8;
+    --tab-button-focus-border-bottom: 2px solid #1d4ed8;
+    --tab-button-hover-color: gainsboro;
+    --tab-icon-color: #707070;
+    --tab-icon-size: 1.5rem;
+    --tab-button-focus-outline-color: transparent;
+}
+
 .tab {
     background-color: var(--tab-bg-color);
     border: var(--tab-border);
